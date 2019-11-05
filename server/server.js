@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/usuario', function(req, res) {
-    res.json('get Usuario');
+    res.json('get Usuario LOCAL!!!');
 });
 
 app.post('/usuario', function(req, res) {
@@ -47,6 +47,6 @@ app.delete('/usuario', function(req, res) {
     res.json('delete Usuario');
 });
 
-app.listen(process.env.process, () => {
-    console.log('escuchando puerto:', 3000);
+app.listen(process.env.PORT, () => {
+    console.log('escuchando puerto:', process.env.PORT);
 });
