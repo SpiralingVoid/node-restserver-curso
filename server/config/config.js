@@ -10,6 +10,22 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 
 //===============================
+//Vencimiento del token
+//===============================
+//60 segundos 
+//60segundos
+//24 hrs
+//30 dias
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+
+//===============================
+//SEED de autentificación
+//===============================
+process.env.SEED = process.env.SEED || 'esto-es-el-seed-en-desarrollo';
+
+
+//===============================
 //Entorno
 //===============================
 let urlDB;
